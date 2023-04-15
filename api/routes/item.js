@@ -6,8 +6,8 @@ const {authentication} = require('../middlewares/auth')
 
 itemRouter.get('/', itemController.getAllItem)
 itemRouter.post('/', authentication, uploadImage,itemController.create)
-itemRouter.put('/attedant/delete/:id', itemController.deleteRequest)
-itemRouter.put('/attedant/update/:id', itemController.updateRequest)
+itemRouter.put('/attendant/delete/:id', itemController.deleteRequest)
+itemRouter.put('/attendant/update/:id', itemController.updateRequest)
 itemRouter.delete('/:id', itemController.delete)
 itemRouter.put('/:id', itemController.update)
 itemRouter.get('/images/:filename', async (req,res)=>{
