@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       item.belongsTo(models.user)
       item.belongsTo(models.brand)
+      item.hasMany(models.historyItem)
     }
   }
   item.init({
