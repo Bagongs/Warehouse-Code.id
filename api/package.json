@@ -4,7 +4,8 @@
   "description": "this app is api for interaction between server and client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon --delay 1 server.js"
   },
   "author": "Zia Pratama, Reizky Yudha",
   "license": "ISC",

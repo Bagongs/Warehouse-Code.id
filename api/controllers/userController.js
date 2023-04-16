@@ -49,7 +49,8 @@ class UserController{
                     res.status(200).json({tokenData})
                 }
                 else{
-                    res.json(403).json({
+                    // console.log(result)
+                    res.status(403).json({
                         message:'Password is invalid'
                     })
                 }
